@@ -9,7 +9,7 @@ def demo1(request):
     return render(request,'myapp/demo1.html')
 
 def demo2(request):
-    return render(request,'myapp/demo2.html',{'name':'manju'})
+    return render(request,"myapp/demo2.html",context={"name":"manju"})
 
 def fact(request,n):
     n=int(n)
